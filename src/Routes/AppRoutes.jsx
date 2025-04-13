@@ -4,6 +4,7 @@ import Home from "../Pages/Home";
 import Statistics from "../Pages/Statistics";
 import AddMovie from "../Pages/AddMovie";
 import Wishlist from "../Pages/Wishlist";
+import ErrorPage from "../Components/ErrorPage";
 
 const AppRoutes = () => {
   return (
@@ -14,6 +15,7 @@ const AppRoutes = () => {
           <Route path="/stats" element={<Statistics />} />
           <Route path="/addmovie" element={<AddMovie />} />
           <Route path="/wishlist" element={<Wishlist />} />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </MainLayout>
     </Router>

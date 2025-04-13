@@ -8,6 +8,7 @@ const MovieStats = ({ item, index }) => {
   const NavigateToPage = () => {
     if (index === 0) navigater("/");
     else if (index === 2) navigater("/wishlist");
+    else navigater("/watched");
   };
 
   return (

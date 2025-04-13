@@ -113,6 +113,8 @@ body {
   color: white;
 }
 
+/* Genre Card */
+
 .genre-card {
   flex: 1;
 }
@@ -120,6 +122,15 @@ body {
 .genre-card p {
   background-color: #403f5b;
   font-family: "Courier New", Courier, monospace;
+}
+
+/* Error Page */
+.error-page img {
+  margin-left: 100px;
+}
+
+.error-page p {
+  font-size: 50px;
 }
 
 /* Footer  */
