@@ -78,6 +78,12 @@ body {
   padding: 0;
 }
 
+/* Movie Form */
+::placeholder {
+  color: white !important;
+  opacity: 0.5 !important;
+}
+
 /* Footer  */
 
 .footer {

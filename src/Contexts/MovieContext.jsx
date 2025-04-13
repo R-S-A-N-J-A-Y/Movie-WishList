@@ -26,8 +26,12 @@ export const MovieProvider = ({ children }) => {
     );
   };
 
+  const AddMovie = (movie) => {
+    setMovies([...movies, movie]);
+  };
+
   return (
-    <MovieContext.Provider value={{ movies, toggleWatched }}>
+    <MovieContext.Provider value={{ movies, toggleWatched, AddMovie }}>
       {children}
     </MovieContext.Provider>
   );
