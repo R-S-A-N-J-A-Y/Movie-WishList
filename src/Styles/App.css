@@ -98,6 +98,21 @@ body {
   opacity: 0.5 !important;
 }
 
+/* Statistics */
+
+.stats-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #2f2e44;
+}
+
+.stats-card p {
+  font-size: larger;
+  font-family: "Courier New", Courier, monospace;
+  color: white;
+}
+
 /* Footer  */
 
 .footer {

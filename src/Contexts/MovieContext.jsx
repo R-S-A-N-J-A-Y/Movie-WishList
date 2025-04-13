@@ -145,6 +145,10 @@ export const MovieProvider = ({ children }) => {
     setFavorite(Favorites.filter((mov) => mov.id !== id));
   };
 
+  const AvailableMovies = movies.length;
+  const WatchedMovies = movies.filter((mov) => mov.isWatched).length;
+  const FavoriteMovies = Favorites.length;
+
   return (
     <MovieContext.Provider
       value={{
@@ -154,6 +158,9 @@ export const MovieProvider = ({ children }) => {
         toggleLikes,
         AddMovie,
         DeleteMovie,
+        AvailableMovies,
+        WatchedMovies,
+        FavoriteMovies,
       }}
     >
       {children}
