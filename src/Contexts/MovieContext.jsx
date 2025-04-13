@@ -116,6 +116,9 @@ const initalMovies = [
 
 export const MovieProvider = ({ children }) => {
   const [movies, setMovies] = useState(initalMovies);
+  const [Favorites, setFavorite] = useState(
+    initalMovies.filter((mov) => mov.isFavorite)
+  );
 
   const toggleWatched = (id) => {
     setMovies(
@@ -125,17 +128,33 @@ export const MovieProvider = ({ children }) => {
     );
   };
 
+  const toggleLikes = (id) => {
+    const updatedMovies = movies.map((mov) =>
+      mov.id === id ? { ...mov, isFavorite: !mov.isFavorite } : mov
+    );
+    setMovies(updatedMovies);
+    setFavorite(updatedMovies.filter((mov) => mov.isFavorite));
+  };
+
   const AddMovie = (movie) => {
     setMovies([...movies, movie]);
   };
 
   const DeleteMovie = (id) => {
     setMovies(movies.filter((mov) => mov.id !== id));
+    setFavorite(Favorites.filter((mov) => mov.id !== id));
   };
 
   return (
     <MovieContext.Provider
-      value={{ movies, toggleWatched, AddMovie, DeleteMovie }}
+      value={{
+        movies,
+        Favorites,
+        toggleWatched,
+        toggleLikes,
+        AddMovie,
+        DeleteMovie,
+      }}
     >
       {children}
     </MovieContext.Provider>

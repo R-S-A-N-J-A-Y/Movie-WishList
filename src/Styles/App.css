@@ -72,6 +72,20 @@ body {
   padding: 15px;
 }
 
+.movie-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 250px;
+}
+
+.movie-name:hover {
+  overflow: visible;
+  white-space: normal;
+  text-overflow: clip;
+  transition: all 0.5s ease;
+}
+
 .movie-card-btn {
   background: transparent;
   border: none;

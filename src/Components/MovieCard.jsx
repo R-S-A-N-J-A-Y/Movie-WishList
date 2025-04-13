@@ -6,7 +6,7 @@ import { PiFilmSlate } from "react-icons/pi";
 import { useMovie } from "../Contexts/MovieContext";
 
 const MovieCard = ({ movie }) => {
-  const { toggleWatched, DeleteMovie } = useMovie();
+  const { toggleWatched, toggleLikes, DeleteMovie } = useMovie();
 
   return (
     <div className="card movie-card">
@@ -18,7 +18,7 @@ const MovieCard = ({ movie }) => {
       </div>
 
       <div className="card-body movie-card-body">
-        <h4 className="card-title">{movie.title}</h4>
+        <h4 className="card-title movie-name">{movie.title}</h4>
         <p className="card-text">{movie.director}</p>
         <div className="pe-3 d-flex justify-content-between align-items-center ">
           <button
@@ -27,7 +27,10 @@ const MovieCard = ({ movie }) => {
           >
             {movie.isWatched ? "Mark Unwatched" : " Add to Watch "}
           </button>
-          <button className="movie-card-btn">
+          <button
+            className="movie-card-btn"
+            onClick={() => toggleLikes(movie.id)}
+          >
             {movie.isFavorite ? (
               <GoHeartFill size={29} color="red" />
             ) : (
