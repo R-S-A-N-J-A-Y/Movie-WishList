@@ -18,8 +18,18 @@ const initalMovies = [
 export const MovieProvider = ({ children }) => {
   const [movies, setMovies] = useState(initalMovies);
 
+  const toggleWatched = (id) => {
+    setMovies(
+      movies.map((mov) =>
+        mov.id === id ? { ...mov, isWatched: !mov.isWatched } : mov
+      )
+    );
+  };
+
   return (
-    <MovieContext.Provider value={{ movies }}>{children}</MovieContext.Provider>
+    <MovieContext.Provider value={{ movies, toggleWatched }}>
+      {children}
+    </MovieContext.Provider>
   );
 };
 
