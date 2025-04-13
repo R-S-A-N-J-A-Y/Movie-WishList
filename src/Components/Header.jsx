@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <nav class="navbar navbar-expand-sm bg-secondary header">
+    <nav class="navbar navbar-expand-sm header">
       <div class="container-fluid d-flex justify-content-center gap-5">
         <NavLink to="/" className="nav-link">
           Home

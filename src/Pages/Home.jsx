@@ -1,7 +1,8 @@
 import React from "react";
+import MovieList from "../Components/MovieList";
 
 const Home = () => {
-  return <div>Home</div>;
+  return <MovieList />;
 };
 
 export default Home;
