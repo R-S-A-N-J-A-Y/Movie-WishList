@@ -4,11 +4,11 @@ import Footer from "../Components/Footer";
 
 const MainLayout = ({ children }) => {
   return (
-    <>
+    <div className="main-layout d-flex flex-column">
       <Header />
-      {children}
+      <main className="main">{children}</main>
       <Footer />
-    </>
+    </div>
   );
 };
 

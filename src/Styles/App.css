@@ -3,6 +3,16 @@ body {
   color: white !important;
 }
 
+/* Main Layout */
+
+.main-layout {
+  min-height: 100vh;
+}
+
+.main {
+  flex: 1;
+}
+
 .header {
   height: 70px;
   background-color: #2f2e44;
@@ -68,6 +78,9 @@ body {
   padding: 0;
 }
 
-/* .card-title {
-  font-size: 25px;
-} */
+/* Footer  */
+
+.footer {
+  background-color: #2f2e44;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
