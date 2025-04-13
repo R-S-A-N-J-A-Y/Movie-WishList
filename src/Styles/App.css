@@ -1,0 +1,15 @@
+.header {
+  height: 70px;
+}
+
+.header a {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  transition: transform 0.3s ease;
+}
+
+.header a:hover {
+  transform: scale(1.2);
+  transition: transform 0.5s ease;
+}

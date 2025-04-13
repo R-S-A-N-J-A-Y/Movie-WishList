@@ -1,7 +1,9 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
-import About from "../Pages/About";
+import Statistics from "../Pages/Statistics";
+import AddMovie from "../Pages/AddMovie";
+import Wishlist from "../Pages/Wishlist";
 
 const AppRoutes = () => {
   return (
@@ -9,7 +11,9 @@ const AppRoutes = () => {
       <MainLayout>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/stats" element={<Statistics />} />
+          <Route path="/addmovie" element={<AddMovie />} />
+          <Route path="/wishlist" element={<Wishlist />} />
         </Routes>
       </MainLayout>
     </Router>
