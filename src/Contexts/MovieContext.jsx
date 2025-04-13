@@ -7,7 +7,7 @@ const initalMovies = [
     id: 1,
     title: "Avengers: Infinity War",
     director: "Anthony and Joe Russo",
-    moviePreview: "/public/MoviePreview/InfinityWar.jpg",
+    moviePreview: "public/MoviePreview/InfinityWar.jpg",
     genre: "Superhero",
     rating: 9.3,
     isWatched: true,
