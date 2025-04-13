@@ -113,6 +113,15 @@ body {
   color: white;
 }
 
+.genre-card {
+  flex: 1;
+}
+
+.genre-card p {
+  background-color: #403f5b;
+  font-family: "Courier New", Courier, monospace;
+}
+
 /* Footer  */
 
 .footer {

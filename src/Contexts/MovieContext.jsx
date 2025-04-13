@@ -149,6 +149,11 @@ export const MovieProvider = ({ children }) => {
   const WatchedMovies = movies.filter((mov) => mov.isWatched).length;
   const FavoriteMovies = Favorites.length;
 
+  const AllGenres = movies.reduce((acc, movie) => {
+    acc[movie.genre] = (acc[movie.genre] || 0) + 1;
+    return acc;
+  }, {});
+
   return (
     <MovieContext.Provider
       value={{
@@ -161,6 +166,7 @@ export const MovieProvider = ({ children }) => {
         AvailableMovies,
         WatchedMovies,
         FavoriteMovies,
+        AllGenres,
       }}
     >
       {children}
