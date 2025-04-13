@@ -8,10 +8,7 @@ const MovieCard = ({ movie }) => {
   return (
     <div className="card movie-card">
       <div className="movie-card-top">
-        <img
-          className="card-img-top"
-          src="/public/MoviePreview/InfinityWar.jpg"
-        ></img>
+        <img className="card-img-top" src={movie.moviePreview}></img>
         <p className="movie-img-floater d-flex align-items-center gap-2">
           <PiFilmSlate size={25} /> {movie.rating}
         </p>

@@ -1,18 +1,9 @@
+import { useMovie } from "../Contexts/MovieContext";
 import MovieCard from "./MovieCard";
 
-const movies = [
-  {
-    id: 1,
-    title: "Avengers: Infinity War",
-    director: "Anthony and Joe Russo",
-    genre: "Superhero",
-    rating: 8.4,
-    isWatched: true,
-    isFavorite: true,
-  },
-];
-
 const MovieList = () => {
+  const { movies } = useMovie();
+
   return (
     <div className="m-2 p-3">
       <h1 className="text-center">Available Movies</h1>
