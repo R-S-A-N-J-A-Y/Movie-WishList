@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import MainLayout from "../Layouts/MainLayout";
 import Home from "../Pages/Home";
 import Statistics from "../Pages/Statistics";
-import AddMovie from "../Pages/AddMovie";
+import AddMovie from "../Pages/Addmovie";
 import Wishlist from "../Pages/Wishlist";
 import ErrorPage from "../Components/ErrorPage";
 import NotDevpage from "../Components/NotDevpage";
