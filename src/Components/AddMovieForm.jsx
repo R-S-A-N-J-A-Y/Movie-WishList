@@ -147,7 +147,7 @@ const AddMovieForm = () => {
           )}
         </div>
         <div>
-          <button className="btn btn-primary">Submit</button>
+          <button className="btn btn-primary">ADD</button>
         </div>
       </form>
     </div>

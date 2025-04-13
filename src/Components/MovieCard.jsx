@@ -6,7 +6,7 @@ import { PiFilmSlate } from "react-icons/pi";
 import { useMovie } from "../Contexts/MovieContext";
 
 const MovieCard = ({ movie }) => {
-  const { toggleWatched } = useMovie();
+  const { toggleWatched, DeleteMovie } = useMovie();
 
   return (
     <div className="card movie-card">
@@ -34,7 +34,10 @@ const MovieCard = ({ movie }) => {
               <GoHeart size={30} />
             )}
           </button>
-          <button className="movie-card-btn">
+          <button
+            className="movie-card-btn"
+            onClick={() => DeleteMovie(movie.id)}
+          >
             <TbTrashFilled color="white" size={29} />
           </button>
         </div>
