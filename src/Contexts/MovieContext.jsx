@@ -137,7 +137,7 @@ export const MovieProvider = ({ children }) => {
   };
 
   const AddMovie = (movie) => {
-    setMovies([...movies, movie]);
+    setMovies([...movies, { id: movies.length + 1, ...movie }]);
   };
 
   const DeleteMovie = (id) => {
