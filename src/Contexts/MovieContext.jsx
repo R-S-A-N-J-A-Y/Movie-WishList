@@ -26,13 +26,13 @@ const initalMovies = [
   },
   {
     id: 3,
-    title: "The Dark Knight",
-    director: "Christopher Nolan",
+    title: "Transformers: Age of Extinction",
+    director: "Michael Bay",
     moviePreview:
-      "https://i.pinimg.com/736x/28/c6/ea/28c6ea971e260f467aa919769b1c8e66.jpg",
+      "https://i.pinimg.com/736x/2e/93/47/2e93470a50a734e6d30b5af69317429a.jpg",
     genre: "Action",
-    rating: 8.3,
-    isWatched: true,
+    rating: 8.7,
+    isWatched: false,
     isFavorite: false,
   },
   {
@@ -44,7 +44,7 @@ const initalMovies = [
     genre: "Superhero",
     rating: 9.2,
     isWatched: false,
-    isFavorite: false,
+    isFavorite: true,
   },
   {
     id: 5,
@@ -81,13 +81,13 @@ const initalMovies = [
   },
   {
     id: 8,
-    title: "Transformers: Age of Extinction",
-    director: "Michael Bay",
+    title: "The Dark Knight",
+    director: "Christopher Nolan",
     moviePreview:
-      "https://i.pinimg.com/736x/2e/93/47/2e93470a50a734e6d30b5af69317429a.jpg",
+      "https://i.pinimg.com/736x/28/c6/ea/28c6ea971e260f467aa919769b1c8e66.jpg",
     genre: "Action",
-    rating: 8.7,
-    isWatched: false,
+    rating: 8.3,
+    isWatched: true,
     isFavorite: false,
   },
   {
