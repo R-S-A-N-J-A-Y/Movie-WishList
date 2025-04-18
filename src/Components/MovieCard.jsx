@@ -20,9 +20,11 @@ const MovieCard = ({ movie }) => {
       <div className="card-body movie-card-body">
         <h4 className="card-title movie-name">{movie.title}</h4>
         <p className="card-text">{movie.director}</p>
-        <div className="pe-3 d-flex justify-content-between align-items-center ">
+        <div className="pe-3 d-flex align-items-center gap-3">
           <button
-            className={`btn btn-${movie.isWatched ? "secondary" : "primary"}`}
+            className={`btn btn-${
+              movie.isWatched ? "secondary" : "primary"
+            } movie-watched-btn`}
             onClick={() => toggleWatched(movie.id)}
           >
             {movie.isWatched ? "Mark Unwatched" : " Add to Watch "}
