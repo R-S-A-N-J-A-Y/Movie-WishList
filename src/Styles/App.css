@@ -22,9 +22,14 @@ h3 {
 }
 
 .header {
+  padding-top: 10px;
   height: 70px;
   background-color: #2f2e44;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header button:focus {
+  border: none;
 }
 
 .header a {
@@ -34,7 +39,7 @@ h3 {
   transition: transform 0.3s ease;
 }
 
-.header a:hover {
+.header-nav:hover {
   transform: scale(1.2);
   transition: transform 0.5s ease;
 }
@@ -44,6 +49,31 @@ h3 {
   width: 0;
   background-color: white;
   animation: growLine 0.3s ease forwards;
+}
+
+.scrollable-header {
+  overflow-x: hidden;
+  white-space: nowrap;
+  flex-wrap: nowrap !important;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.scrollable-header::-webkit-scrollbar {
+  display: none;
+}
+
+/* ✅ Only on small screens (less than 600px) */
+@media (max-width: 599px) {
+  .scrollable-header:hover {
+    overflow-x: auto;
+    cursor: grab;
+  }
+}
+
+.header-nav {
+  flex: 0 0 auto; /* prevent shrinking */
+  white-space: nowrap;
 }
 
 @keyframes growLine {
