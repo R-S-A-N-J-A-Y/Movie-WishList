@@ -164,6 +164,18 @@ h3 {
 }
 
 /* Movie Form */
+
+@media (max-width: 767px) {
+  .responsive-width {
+    width: 75% !important;
+  }
+}
+@media (min-width: 768px) {
+  .responsive-width {
+    width: 50% !important;
+  }
+}
+
 ::placeholder {
   color: white !important;
   opacity: 0.5 !important;

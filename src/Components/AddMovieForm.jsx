@@ -76,10 +76,7 @@ const AddMovieForm = () => {
   };
 
   return (
-    <div
-      className=" border border-white rounded-3 p-4 w-50"
-      style={{ margin: "0 auto" }}
-    >
+    <div className="responsive-width border border-white rounded-3 p-4 mx-auto">
       <form onSubmit={handleSubmit}>
         <div className="mb-3">
           <label className="form-label ">Movie Name</label>
