@@ -2,9 +2,9 @@ import React from "react";
 
 const ErrorPage = () => {
   return (
-    <div className="bg-white text-dark d-flex align-items-center error-page">
+    <div className="bg-white text-dark d-flex flex-column flex-md-row align-items-center error-page ">
       <img src="Icons/Oops.jpg" alt="" />
-      <p>Oops this page is Not Available.</p>
+      <p className="text-center p-2">Oops !! This page is Not Available.</p>
     </div>
   );
 };
