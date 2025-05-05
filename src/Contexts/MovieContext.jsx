@@ -121,11 +121,11 @@ export const MovieProvider = ({ children }) => {
   );
 
   const toggleWatched = (id) => {
-    setMovies(
-      movies.map((mov) =>
-        mov.id === id ? { ...mov, isWatched: !mov.isWatched } : mov
-      )
+    const updatedMovie = movies.map((mov) =>
+      mov.id === id ? { ...mov, isWatched: !mov.isWatched } : mov
     );
+    setMovies(updatedMovie);
+    setFavorite(updatedMovie.filter((mov) => mov.isFavorite));
   };
 
   const toggleLikes = (id) => {
