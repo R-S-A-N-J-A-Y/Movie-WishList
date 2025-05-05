@@ -218,7 +218,7 @@ h3 {
 /* Developing Page  */
 
 .dev-page {
-  padding: 78px;
+  padding: 50px;
 }
 
 .dev-page img {
@@ -228,7 +228,27 @@ h3 {
 
 .dev-page p {
   font-family: "Kanit", sans-serif;
-  font-size: 42px;
+  font-size: 35px;
+}
+
+@media (max-width: 330px) {
+  .dev-page img {
+    width: 45vh;
+  }
+
+  .dev-page p {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 331px) and (max-width: 1093px) {
+  .dev-page img {
+    width: 50vh;
+  }
+
+  .dev-page p {
+    font-size: 25px;
+  }
 }
 
 /* Footer  */
