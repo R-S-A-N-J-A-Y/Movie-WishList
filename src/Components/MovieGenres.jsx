@@ -6,10 +6,7 @@ const MovieGenres = () => {
   const Navigator = useNavigate();
 
   return (
-    <div
-      className="m-3 border border-2 border-white rounded-5 d-flex flex-column p-4"
-      style={{ width: "900px" }}
-    >
+    <div className="m-3 border border-2 border-white rounded-5 d-flex flex-column p-4">
       <h3 className="mb-4">Genre List Available: </h3>
       <GenreCard />
 
